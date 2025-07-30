@@ -16,11 +16,11 @@ response = requests.get(url)
 script_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(script_dir, "profile-of-hereandnowai.txt")
 
+
 with open (file_path, "wb") as f:
     f.write(response.content)
 
 text_path = file_path
-
 try:
     with open(text_path,"r",encoding="utf-8") as file:
         text_lines = file.readlines()
