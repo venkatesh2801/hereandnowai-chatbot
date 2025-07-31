@@ -24,4 +24,4 @@ with gr.Blocks(theme="default",title=brand_info["organizationName"]) as app:
         ] 
     )
 if __name__ == "__main__":
-    app.launch()
+    app.launch(share=True)
